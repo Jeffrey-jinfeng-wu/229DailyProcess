@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "229DailyImport", "PythonApplication2\229DailyImport.pyproj", "{E472BD69-B5E6-48C5-9EE5-23B48464E295}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E472BD69-B5E6-48C5-9EE5-23B48464E295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E472BD69-B5E6-48C5-9EE5-23B48464E295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A33F070-1061-4AC5-A764-B7643219C98F}
+	EndGlobalSection
+EndGlobal
