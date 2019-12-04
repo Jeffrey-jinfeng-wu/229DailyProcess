@@ -453,12 +453,16 @@ if path.exists("C:\Document\Solutions\Aging and Out of Stock in Stores\Analysis\
             else: ceiling = row['Ceiling']
             if pd.isnull(row['CeilingExpire']): ceilingexpire = ""
             else: ceilingexpire = row['CeilingExpire']
+            if pd.isnull(row['TotalInventory']): totalinventory = 0.0
+            else: totalinventory = row['TotalInventory']
+            if pd.isnull(row['OnOrder']): onorder = ""
+            else: onorder = row['OnOrder']
             if row['IsEnable'] == 0: continue
 
             sql = 'INSERT INTO otb ([LogDate], [Category], [Brand], [Ratio], [Ceiling], [CeilingExpire], [Target], [BudgetCost], \
-            [SalesCost], [RefundCost], [POCost], [Remark]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)'
+            [SalesCost], [RefundCost], [POCost], [Remark], [TotalInventory], [OnOrder]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
             cursor.execute(sql, row['LogDate'], row['CategoryName'], brandname, row['Ratio'], ceiling, ceilingexpire, row['Target'], budgetcost, 
-                           salecost, refundcost, pocost, row['Remark'])
+                           salecost, refundcost, pocost, row['Remark'], totalinventory,onorder )
             conn.commit()
     print('Write OTB')
 
